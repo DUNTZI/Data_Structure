@@ -17,6 +17,7 @@ void MedicalSupplyManager::showMenu() {
         switch (choice) {
             case 1: {
                 Supply s;
+                std::cin.ignore(1000, '\n');
                 std::cout << "Enter Supply Type: ";
                 std::getline(std::cin, s.type);
                 std::cout << "Enter Batch: ";
